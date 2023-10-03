@@ -1,0 +1,73 @@
+package Ecommerce;
+
+import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
+import io.restassured.specification.RequestSpecification;
+import static io.restassured.RestAssured.*;
+
+import java.io.File;
+import java.util.ArrayList;
+
+import POJO.CreateOrder;
+import POJO.LoginRequest;
+import POJO.LoginResponse;
+import POJO.OrderDetail;
+
+public class CRUD {
+
+	public static void main(String args[])
+	{
+		
+		//Login Call
+		RequestSpecification req =	new RequestSpecBuilder().setBaseUri("https://rahulshettyacademy.com").setContentType(ContentType.JSON).build();
+		LoginRequest l = new LoginRequest();
+		l.setUserEmail("prashannarg@gmail.com");
+		l.setUserPassword("Password@179");
+		
+		LoginResponse ls = given().spec(req).body(l).log().all().when().post("/api/ecom/auth/login")
+		.then().log().all().statusCode(200).extract().response().as(LoginResponse.class);
+		
+		String token = ls.getToken();
+		String userId = ls.getUserId();
+		
+		System.out.println(token);
+		System.out.println(userId);
+		
+		//Create Product
+		
+		RequestSpecification createProduct = new RequestSpecBuilder().setBaseUri("https://rahulshettyacademy.com")
+											.addHeader("Authorization", token).build();
+		
+	String addProduct = 	given().spec(createProduct).param("productName","Ladakh").param("productAddedBy", userId)
+		.param("productCategory", "travel").param("productSubCategory", "tour").param("productPrice", "10000").param("productDescription", "Ladakh Tourism")
+		.param("productFor", "bikers").multiPart("productImage",new File("C:\\Users\\prashanna.ramesh\\Downloads\\Ladakh Wallpaper (1).jpg")).log().all()
+		.when().post("/api/ecom/product/add-product").then().log().all().extract().response().asString();
+		
+		JsonPath js = new JsonPath(addProduct);
+		String productId = js.get("productId");
+		
+		//Create Order
+		
+		RequestSpecification createOrder =	new RequestSpecBuilder().setBaseUri("https://rahulshettyacademy.com").setContentType(ContentType.JSON)
+											.addHeader("Authorization", token).build();
+		OrderDetail od = new OrderDetail();
+		od.setCountry("India");
+		od.setProductOrderedId(productId);
+		
+		ArrayList al = new ArrayList<>();
+		al.add(od);
+		
+		CreateOrder co = new CreateOrder();
+		co.setOrders(al);
+		
+		given().log().all().spec(createOrder).body(co).when().post("/api/ecom/order/create-order")
+		.then().log().all();
+		
+		//Delete Product
+		RequestSpecification deleteProduct =	new RequestSpecBuilder().setBaseUri("https://rahulshettyacademy.com").setContentType(ContentType.JSON)
+				.addHeader("Authorization", token).build();
+		
+	}
+	
+}

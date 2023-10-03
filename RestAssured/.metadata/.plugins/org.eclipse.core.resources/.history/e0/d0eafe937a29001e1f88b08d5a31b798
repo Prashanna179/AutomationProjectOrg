@@ -1,0 +1,9 @@
+import Files.Payload;
+
+public class ComplexJsonParse {
+
+	public static void main(String args[])
+	{
+		Files.rawtoJson(Payload.Course());
+	}
+}

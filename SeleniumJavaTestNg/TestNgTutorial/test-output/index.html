@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-EFS" class="navigator-link">
+              <span class="suite-name border-passed">EFS</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-EFS" class="navigator-link ">
+                    <span>C:\UserDrive\Prashan\SeleniumJavaTestNg\TestNgTutorial\test2Xml\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-EFS" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-EFS" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-EFS" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-EFS" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-EFS" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-EFS" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">7 methods,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-EFS" class="hide-methods passed suite-EFS"> (hide)</a> <!-- hide-methods passed suite-EFS -->
+                      <a href="#" panel-name="suite-EFS" class="show-methods passed suite-EFS"> (show)</a> <!-- show-methods passed suite-EFS -->
+                    </span>
+                    <div class="method-list-content passed suite-EFS">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EFS" title="test2.Food" class="method navigator-link" hash-for-method="dunzo">dunzo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EFS" title="test2.SearchEngine" class="method navigator-link" hash-for-method="google">google</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EFS" title="test2.Education" class="method navigator-link" hash-for-method="rahulshetty">rahulshetty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EFS" title="test2.Education" class="method navigator-link" hash-for-method="sdet">sdet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EFS" title="test2.Education" class="method navigator-link" hash-for-method="udemy">udemy</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EFS" title="test2.SearchEngine" class="method navigator-link" hash-for-method="yahoo">yahoo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-EFS" title="test2.Food" class="method navigator-link" hash-for-method="zomato">zomato</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-EFS -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-EFS" class="panel EFS">
+          <div class="suite-EFS-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test2.Education</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="rahulshetty">
+                  </a> <!-- rahulshetty -->
+                  <span class="method-name">rahulshetty</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sdet">
+                  </a> <!-- sdet -->
+                  <span class="method-name">sdet</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="udemy">
+                  </a> <!-- udemy -->
+                  <span class="method-name">udemy</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EFS-class-passed -->
+          <div class="suite-EFS-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test2.Food</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dunzo">
+                  </a> <!-- dunzo -->
+                  <span class="method-name">dunzo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="zomato">
+                  </a> <!-- zomato -->
+                  <span class="method-name">zomato</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EFS-class-passed -->
+          <div class="suite-EFS-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test2.SearchEngine</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="google">
+                  </a> <!-- google -->
+                  <span class="method-name">google</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="yahoo">
+                  </a> <!-- yahoo -->
+                  <span class="method-name">yahoo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-EFS-class-passed -->
+        </div> <!-- panel EFS -->
+        <div panel-name="test-xml-EFS" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\UserDrive\Prashan\SeleniumJavaTestNg\TestNgTutorial\test2Xml\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite parallel=&quot;methods&quot; name=&quot;EFS&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;10&quot; parallel=&quot;methods&quot; name=&quot;EFS Testing&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test2.Education&quot;/&gt;
+      &lt;class name=&quot;test2.Food&quot;/&gt;
+      &lt;class name=&quot;test2.SearchEngine&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- EFS Testing --&gt;
+&lt;/suite&gt; &lt;!-- EFS --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-EFS" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for EFS</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">EFS Testing (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-EFS" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for EFS</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-EFS" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for EFS</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_EFS');
+function tableData_EFS() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(7);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'yahoo')
+data.setCell(0, 2, 'test2.SearchEngine')
+data.setCell(0, 3, 19057);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'udemy')
+data.setCell(1, 2, 'test2.Education')
+data.setCell(1, 3, 15019);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'zomato')
+data.setCell(2, 2, 'test2.Food')
+data.setCell(2, 3, 14360);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'rahulshetty')
+data.setCell(3, 2, 'test2.Education')
+data.setCell(3, 3, 14077);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'dunzo')
+data.setCell(4, 2, 'test2.Food')
+data.setCell(4, 3, 13684);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'sdet')
+data.setCell(5, 2, 'test2.Education')
+data.setCell(5, 3, 13093);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'google')
+data.setCell(6, 2, 'test2.SearchEngine')
+data.setCell(6, 3, 13033);
+window.suiteTableData['EFS']= { tableData: data, tableDiv: 'times-div-EFS'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-EFS">
+              </div> <!-- times-div-EFS -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-EFS" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for EFS</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-EFS" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-EFS" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">test2.SearchEngine</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">google</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test2.Food</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">dunzo</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test2.Education</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">rahulshetty</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test2.SearchEngine</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">yahoo</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test2.Education</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">sdet</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test2.Food</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">zomato</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test2.Education</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">udemy</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

@@ -1,0 +1,38 @@
+package test2;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+public class Education {
+	
+	@Test
+	public void udemy() throws InterruptedException
+	{
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.udemy.com/");
+		Thread.sleep(5000);
+		driver.close();
+	}
+	
+	@Test
+	public void rahulshetty() throws InterruptedException
+	{
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://rahulshettyacademy.com/");
+		Thread.sleep(5000);
+		driver.close();
+	}
+	
+	@Test
+	public void sdet() throws InterruptedException
+	{
+		WebDriver driver = new ChromeDriver();
+		driver.get("http://sdet.com/");
+		Thread.sleep(5000);
+		driver.close();
+	}
+	
+}
+

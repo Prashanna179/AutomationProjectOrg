@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-18T11:11:53 IST" name="Suite" finished-at="2023-08-18T11:12:33 IST" duration-ms="40458">
+    <groups>
+      <group name="Purchase">
+        <method signature="SubmitOrderTest.SubmitOrder(java.util.HashMap)[pri:0, instance:Temenos.TestCases.SubmitOrderTest@5af3afd9]" name="SubmitOrder" class="Temenos.TestCases.SubmitOrderTest"/>
+      </group> <!-- Purchase -->
+    </groups>
+    <test started-at="2023-08-18T11:11:53 IST" name="Submit Order TestFolder" finished-at="2023-08-18T11:12:21 IST" duration-ms="28160">
+      <class name="Temenos.TestCases.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Temenos.TestCases.SubmitOrderTest@5af3afd9]" started-at="2023-08-18T11:11:53 IST" name="launchApplication" finished-at="2023-08-18T11:11:59 IST" duration-ms="6232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="SubmitOrder(java.util.HashMap)[pri:0, instance:Temenos.TestCases.SubmitOrderTest@5af3afd9]" started-at="2023-08-18T11:11:59 IST" name="SubmitOrder" data-provider="giveData" finished-at="2023-08-18T11:12:05 IST" duration-ms="5322" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Password@179, email=prashannarg@gmail.com, productName=zara coat 3}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitOrder -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:Temenos.TestCases.SubmitOrderTest@5af3afd9]" started-at="2023-08-18T11:12:05 IST" name="closeWindow" finished-at="2023-08-18T11:12:05 IST" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Temenos.TestCases.SubmitOrderTest@5af3afd9]" started-at="2023-08-18T11:12:05 IST" name="launchApplication" finished-at="2023-08-18T11:12:09 IST" duration-ms="4497" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="SubmitOrder(java.util.HashMap)[pri:0, instance:Temenos.TestCases.SubmitOrderTest@5af3afd9]" started-at="2023-08-18T11:12:09 IST" name="SubmitOrder" data-provider="giveData" finished-at="2023-08-18T11:12:15 IST" duration-ms="5760" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Password@179, email=Dhivyan@gmail.com, productName=adidas original}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitOrder -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:Temenos.TestCases.SubmitOrderTest@5af3afd9]" started-at="2023-08-18T11:12:15 IST" name="closeWindow" finished-at="2023-08-18T11:12:15 IST" duration-ms="97" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Temenos.TestCases.SubmitOrderTest@5af3afd9]" started-at="2023-08-18T11:12:15 IST" name="launchApplication" finished-at="2023-08-18T11:12:20 IST" duration-ms="5143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="validateOrderPage()[pri:0, instance:Temenos.TestCases.SubmitOrderTest@5af3afd9]" started-at="2023-08-18T11:12:20 IST" name="validateOrderPage" finished-at="2023-08-18T11:12:21 IST" depends-on-methods="Temenos.TestCases.SubmitOrderTest.SubmitOrder" duration-ms="705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateOrderPage -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:Temenos.TestCases.SubmitOrderTest@5af3afd9]" started-at="2023-08-18T11:12:21 IST" name="closeWindow" finished-at="2023-08-18T11:12:21 IST" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+      </class> <!-- Temenos.TestCases.SubmitOrderTest -->
+    </test> <!-- Submit Order TestFolder -->
+    <test started-at="2023-08-18T11:12:21 IST" name="Error Validation TestFolder" finished-at="2023-08-18T11:12:33 IST" duration-ms="12281">
+      <class name="Temenos.TestCases.ErrorValidationTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Temenos.TestCases.ErrorValidationTest@4135c3b]" started-at="2023-08-18T11:12:21 IST" name="launchApplication" finished-at="2023-08-18T11:12:26 IST" duration-ms="4634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="confirmationMsgValidation()[pri:0, instance:Temenos.TestCases.ErrorValidationTest@4135c3b]" started-at="2023-08-18T11:12:26 IST" name="confirmationMsgValidation" finished-at="2023-08-18T11:12:27 IST" duration-ms="1696" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button _ngcontent-smq-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1028, 27). Other element would receive the click: <div _ngcontent-smq-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
+  (Session info: chrome=115.0.5790.171)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [48a28b03c128efabc394fe34d6c46920, clickElement {id=BA40AA815DC8CA1060ACE5C45A861947_element_39}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PRASHA~1.RAM\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:60467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60467/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (48a28b03c128efabc394fe34d6c46920)] -> xpath: (//i[@class='fa fa-shopping-cart']/..)[1]]
+Session ID: 48a28b03c128efabc394fe34d6c46920]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-smq-c33="" routerlink="/dashboard/cart" class="btn btn-custom" style="margin-top: -10px;" tabindex="0">...</button> is not clickable at point (1028, 27). Other element would receive the click: <div _ngcontent-smq-c31="" class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted" style="background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;">...</div>
+  (Session info: chrome=115.0.5790.171)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [48a28b03c128efabc394fe34d6c46920, clickElement {id=BA40AA815DC8CA1060ACE5C45A861947_element_39}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PRASHA~1.RAM\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:60467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60467/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (48a28b03c128efabc394fe34d6c46920)] -> xpath: (//i[@class='fa fa-shopping-cart']/..)[1]]
+Session ID: 48a28b03c128efabc394fe34d6c46920
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at Temenos.UtlityMethods.UtlityMethods.goToCartPage(UtlityMethods.java:51)
+at Temenos.TestCases.ErrorValidationTest.confirmationMsgValidation(ErrorValidationTest.java:43)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmationMsgValidation -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:Temenos.TestCases.ErrorValidationTest@4135c3b]" started-at="2023-08-18T11:12:27 IST" name="closeWindow" finished-at="2023-08-18T11:12:27 IST" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Temenos.TestCases.ErrorValidationTest@4135c3b]" started-at="2023-08-18T11:12:27 IST" name="launchApplication" finished-at="2023-08-18T11:12:32 IST" duration-ms="4507" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginErrorValidation()[pri:0, instance:Temenos.TestCases.ErrorValidationTest@4135c3b]" started-at="2023-08-18T11:12:32 IST" name="loginErrorValidation" finished-at="2023-08-18T11:12:33 IST" duration-ms="1183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorValidation -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:Temenos.TestCases.ErrorValidationTest@4135c3b]" started-at="2023-08-18T11:12:33 IST" name="closeWindow" finished-at="2023-08-18T11:12:33 IST" duration-ms="97" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+      </class> <!-- Temenos.TestCases.ErrorValidationTest -->
+    </test> <!-- Error Validation TestFolder -->
+  </suite> <!-- Suite -->
+</testng-results>

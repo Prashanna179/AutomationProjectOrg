@@ -1,0 +1,33 @@
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import Base.Payload;
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+
+import static io.restassured.RestAssured.*;
+
+
+public class Library {
+
+	@Test(dataProvider = "BooksData")
+	public void addBook(String isbn , String aisle)
+	{
+		String response =  RestAssured.baseURI="http://216.10.245.166";
+		given().log().all().header("Content-type","application/json").body(Payload.addBook(isbn,aisle))
+		.when().post("/Library/Addbook.php")
+		.then().log().all().assertThat().statusCode(200).extract().response().asString();
+		
+		JsonPath js = new JsonPath(response);
+		System.out.println(js.get("ID")));
+	}
+	
+	@DataProvider(name = "BooksData")
+	public Object[][] getData()
+	{
+		Object o[][]= {{"abc","123"},{"def","456"},{"ghi","789"}};
+		return o;
+	}
+	
+	
+}
