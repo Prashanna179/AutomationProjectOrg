@@ -20,7 +20,9 @@ public class StandAloneTest {
 
 	public static void main(String[] args) throws InterruptedException {
 		
-		WebDriverManager.chromedriver().setup();
+		//WebDriverManager.chromedriver().setup();
+		System.setProperty("webdriver.chrome.driver", "C:\\UserDrive\\Prashan\\drivers\\chromedriver.exe");
+		
 		
 		String s = "zara coat 3";
 		WebDriver driver = new ChromeDriver();

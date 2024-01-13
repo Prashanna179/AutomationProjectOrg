@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Retry.java&apos; to &apos;ExternalReports/src/main/java&apos;&#x0D;&#x0A;- Original project: &apos;SeleniumFrameworkDesign&apos;&#x0D;&#x0A;- Destination element: &apos;ExternalReports/src/main/java&apos;&#x0D;&#x0A;- Original element: &apos;Temenos.GlobalTest.Retry.java&apos;" description="Copy compilation unit" destination="=ExternalReports/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" element1="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;Temenos.GlobalTest{Retry.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1701372124674" units="1" version="1.0"/>
+</session>

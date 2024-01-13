@@ -36,8 +36,6 @@ public class Serialization {
 		.when().post("/maps/api/place/add/json")
 		.then().log().all().assertThat().statusCode(200);
 		
-		
-
 	}
 
 }

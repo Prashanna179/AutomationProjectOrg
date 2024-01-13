@@ -3,6 +3,7 @@ package Temenos.TestCases;
 import java.io.IOException;
 
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import Temenos.GlobalTest.BaseTest;
@@ -11,6 +12,7 @@ import Temenos.PageObjectModel.StandAloneTest2.CartPage;
 import Temenos.PageObjectModel.StandAloneTest2.CheckoutPage;
 import Temenos.PageObjectModel.StandAloneTest2.ConfirmationPage;
 import Temenos.PageObjectModel.StandAloneTest2.ProductPage;
+
 
 public class ErrorValidationTest extends BaseTest{
 
@@ -22,8 +24,7 @@ public class ErrorValidationTest extends BaseTest{
 	//LoginPage loginPage = launchApplication(); -> handled as beforeMethod in BaseTest
 	ProductPage productpage = loginPage.loginApplication("prashannarg@gmail.com","Passwo@179");
 	Thread.sleep(1000);
-	Assert.assertEquals(loginPage.getErrorMessage(), "Incorrect email or password.");   
-	
+	Assert.assertEquals(loginPage.getErrorMessage(), "Incorrect email or password.");
 	}
 	
 	@Test
@@ -42,6 +43,7 @@ public class ErrorValidationTest extends BaseTest{
 		/*****Cart Page*****/
 		cartpage.goToCartPage();
 		CheckoutPage checkoutpage = cartpage.toCheckOut();
+		
 		
 		/*****CheckOut Page*****/
 		ConfirmationPage confirmationpage = checkoutpage.chooseCountry();

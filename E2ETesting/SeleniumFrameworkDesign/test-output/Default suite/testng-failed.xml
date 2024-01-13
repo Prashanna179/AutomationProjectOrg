@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Temenos.TestCases.SubmitOrderTest">
+      <class name="Temenos.TestCases.ErrorValidationTest">
         <methods>
-          <include name="validateOrderPage"/>
           <include name="launchApplication"/>
           <include name="closeWindow"/>
-          <include name="SubmitOrder" invocation-numbers="0 1"/>
+          <include name="loginErrorValidation"/>
         </methods>
-      </class> <!-- Temenos.TestCases.SubmitOrderTest -->
+      </class> <!-- Temenos.TestCases.ErrorValidationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

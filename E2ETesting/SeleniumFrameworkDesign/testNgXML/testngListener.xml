@@ -15,5 +15,4 @@
       		<class name="Temenos.TestCases.ErrorValidationTest"/>
     	</classes>
     </test>
-    
 </suite> <!-- Suite -->

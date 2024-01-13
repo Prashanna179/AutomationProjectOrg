@@ -12,8 +12,8 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
 public class Listener extends BaseTest implements ITestListener{
-	ExtentTest test;
-	ExtentReports extent = ExtentReportsNG.getReportObject();
+	public ExtentTest test;
+	public ExtentReports report = ExtentReportsNG.getReportObject();
 	//ThreadLocal extentTest = new ThreadLocal();
 	//To avoid concurrency thread local class is used
 	ThreadLocal<ExtentTest> t = new ThreadLocal<ExtentTest>();
@@ -22,14 +22,14 @@ public class Listener extends BaseTest implements ITestListener{
 	@Override
 	public void onTestStart(ITestResult result) {
 		//Create an entry for Html report 
-		test = extent.createTest(result.getMethod().getMethodName());
+		test = report.createTest(result.getMethod().getMethodName());
 		t.set(test); //unique thread id created
 	  }
 	
 	@Override
 	public void onTestSuccess(ITestResult result) {
 	   // test.log(Status.PASS, result.getMethod().getMethodName() + " Testcase is passed" );
-		t.get().log(Status.PASS, result.getMethod().getMethodName() + " Testcase is passed" );
+		t.get().log(Status.PASS, result.getMethod().getMethodName() + "Testcase is passed");
 	  }
 	
 	@Override
@@ -58,7 +58,7 @@ public class Listener extends BaseTest implements ITestListener{
 	
 	@Override
 	public void onFinish(ITestContext context) {
-	   extent.flush();
+	   report.flush();
 	  }
 	
 	

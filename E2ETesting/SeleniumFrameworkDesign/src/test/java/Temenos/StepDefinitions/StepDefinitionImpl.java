@@ -58,11 +58,10 @@ public class StepDefinitionImpl extends BaseTest {
 		driver.close();
 	}
 	
-	@Then("{string} is displayed")
-	public void error_msg_is_displayed() throws InterruptedException
+	@Then("{string} error message is displayed")
+	public void error_message_is_displayed(String error) 
 	{
-		Thread.sleep(1000);
-		Assert.assertEquals(loginPage.getErrorMessage(), "Incorrect email or password."); 
-		driver.close();
+		Assert.assertEquals(error, "Incorrect email or password.");
 	}
+	
 }

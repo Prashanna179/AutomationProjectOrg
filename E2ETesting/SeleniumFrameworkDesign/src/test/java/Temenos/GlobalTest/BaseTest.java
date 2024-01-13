@@ -58,7 +58,8 @@ public class BaseTest {
 		if(browserName.contains("chrome"))
 		{
 			ChromeOptions option = new ChromeOptions();
-			WebDriverManager.chromedriver().setup();
+			//WebDriverManager.chromedriver().setup();
+			System.setProperty("webdriver.chrome.driver", "C:\\UserDrive\\Prashan\\drivers\\chromedriver.exe");
 			if(browserName.contains("headless"))
 			{
 			option.addArguments("headless");

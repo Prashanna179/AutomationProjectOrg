@@ -1,46 +1,44 @@
 package Temenos.ExternalReports;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.BeforeTest;
+import java.io.IOException;
+import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
+import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.Status;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+public class ExtentReportsDemo extends BaseTest{
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
-
-
-public class ExtentReportsDemo {
-
-	ExtentReports extent;
-	@BeforeTest
-	public void config()
-	{
-		String path = System.getProperty("user.dir")+"\\reports\\index.html";
-		ExtentSparkReporter reporter = new ExtentSparkReporter(path);
-		reporter.config().setReportName("Web Automation Results");
-		reporter.config().setDocumentTitle("Test Results");
-		
-		extent = new ExtentReports();
-		extent.attachReporter(reporter);
-		extent.setSystemInfo("Tester", "Prashanna");
-			
+	
+	@Test(testName="Rahulshetty")
+	public void test1() throws IOException, InterruptedException
+	{ 
+        driver.get("https://rahulshettyacademy.com/");
+        driver.manage().window().maximize();
+        Thread.sleep(3000);
+        test.log(Status.PASS,"Rahulshettacademy URL is launched successfully", MediaEntityBuilder.createScreenCaptureFromPath(Utils.getScreenshot("Rahulshettyacademy URL is launched",driver)).build());
+        String title = driver.getTitle();
+        Assert.assertTrue(title.contains("CPI Testing"));
+        test.log(Status.PASS, "Title verification",MediaEntityBuilder.createScreenCaptureFromPath(Utils.getScreenshot("Rahulshettyacademy Title verification",driver)).build());
+        driver.findElement(By.xpath("(//a[text()='Courses'])[1]")).click();
+        Thread.sleep(3000);
+        test.log(Status.PASS, "Courses Page",MediaEntityBuilder.createScreenCaptureFromPath(Utils.getScreenshot("Course Page Landing",driver)).build());
 	}
 	
-	
-	@Test
-	public void initialDemo()
+	@Test(testName="Amazon")
+	public void test2() throws IOException, InterruptedException
 	{
-	ExtentTest test = 	extent.createTest("Initial Demo");
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
-		driver.get("https://rahulshettyacademy.com/");
-		driver.getTitle();
-		test.fail("Explictly fail the test case");
-		extent.flush();
-		
+        driver.get("https://www.amazon.com/");
+        driver.manage().window().maximize();
+        Thread.sleep(3000);
+        test.log(Status.PASS,"Amazon URL is launched successfully", MediaEntityBuilder.createScreenCaptureFromPath(Utils.getScreenshot("Amazon URL is launched",driver)).build());
+        String title = driver.getTitle();
+        Assert.assertTrue(title.contains("Amazon.com"));
+        test.log(Status.PASS,"Title verification",MediaEntityBuilder.createScreenCaptureFromPath(Utils.getScreenshot("Amazon Title verification",driver)).build());
+        driver.findElement(By.xpath("//a[text()='Your Account']")).click();
+        Thread.sleep(3000);
+        test.log(Status.PASS,"Your Account",MediaEntityBuilder.createScreenCaptureFromPath(Utils.getScreenshot("Your Account Page Landing",driver)).build());
 	}
+	
+	 
 }

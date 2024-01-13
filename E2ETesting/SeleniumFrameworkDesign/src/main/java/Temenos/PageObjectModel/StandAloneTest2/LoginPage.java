@@ -18,7 +18,7 @@ public class LoginPage extends UtlityMethods {
 	{
 		super(driver);
 		this.driver=driver;
-		PageFactory.initElements(driver, this);
+			
 	}
 	
 	public void goTo() throws IOException

@@ -27,6 +27,7 @@ public class TestDemo {
 		//chromePrefs.put("download.default_directory", downloadPath+"/jpgFolder");
 		chromePrefs.put("download.default_directory", downloadPath);
 		ChromeOptions options = new ChromeOptions();
+		
 		options.setExperimentalOption("prefs",chromePrefs);
 		
 		WebDriver driver = new ChromeDriver(options);
@@ -40,12 +41,12 @@ public class TestDemo {
 		
 		driver.get("https://altoconvertpdftojpg.com/");
 		driver.manage().window().maximize();
-		driver.findElement(By.xpath("//*[text()='Choose Files']")).click();
+		driver.findElement(By.xpath("//*[contains(text(),'Or Drop files to upload')]/..")).click();
 		Thread.sleep(3000);
-		Runtime.getRuntime().exec("C:\\Users\\prashanna.ramesh\\Downloads\\FileUpload.exe");
+		Runtime.getRuntime().exec("C:\\UserDrive\\Prashan\\E2ETesting\\Section30\\UploadFile.exe");
 		
 		Thread.sleep(3000);
-		driver.findElement(By.xpath("//*[text()=' Convert files']")).click();
+		driver.findElement(By.xpath("//*[contains(text(),'Or Drop files to upload')]/..")).click();
 		
 		//WebDriverWait w = new WebDriverWait(driver,Duration.ofSeconds(20));
 		//w.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//i[@class='fa fa-download']/.."))));
@@ -63,7 +64,6 @@ public class TestDemo {
 				System.out.println("File Deleted");
 			}
 		}
-
 	}
 
 }

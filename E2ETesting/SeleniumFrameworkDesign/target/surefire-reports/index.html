@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,12 +50,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\UserDrive\Prashan\E2ETesting\SeleniumFrameworkDesign\testNgXML\testng.xml</span>
+                    <span>C:\UserDrive\Prashan\E2ETesting\SeleniumFrameworkDesign\testNgXML\testngSerial.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Temenos.TestCases.ErrorValidationTest" class="method navigator-link" hash-for-method="confirmationMsgValidation">confirmationMsgValidation</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,12 +103,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Temenos.TestCases.SubmitOrderTest" class="method navigator-link" hash-for-method="SubmitOrder({password=Password@179, email=Dhivyan@gmail.com, productName=adidas original})">SubmitOrder({password=Password@179, email=Dhivyan@gmail.com, productName=adidas original})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Temenos.TestCases.SubmitOrderTest" class="method navigator-link" hash-for-method="SubmitOrder({password=Password@179, email=prashannarg@gmail.com, productName=zara coat 3})">SubmitOrder({password=Password@179, email=prashannarg@gmail.com, productName=zara coat 3})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Temenos.TestCases.SubmitOrderTest" class="method navigator-link" hash-for-method="SubmitOrder({password=Password@179, email=Dhivyan@gmail.com, productName=adidas original})">SubmitOrder({password=Password@179, email=Dhivyan@gmail.com, productName=adidas original})</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Temenos.TestCases.ErrorValidationTest" class="method navigator-link" hash-for-method="confirmationMsgValidation">confirmationMsgValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -147,9 +138,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">Temenos.TestCases.ErrorValidationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -158,41 +149,8 @@
                   <a name="confirmationMsgValidation">
                   </a> <!-- confirmationMsgValidation -->
                   <span class="method-name">confirmationMsgValidation</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-smq-c33=&quot;&quot; routerlink=&quot;/dashboard/cart&quot; class=&quot;btn btn-custom&quot; style=&quot;margin-top: -10px;&quot; tabindex=&quot;0&quot;&gt;...&lt;/button&gt; is not clickable at point (1028, 27). Other element would receive the click: &lt;div _ngcontent-smq-c31=&quot;&quot; class=&quot;ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted&quot; style=&quot;background-color: rgba(51, 51, 51, 0.8); z-index: 99999; position: fixed; opacity: 1;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=115.0.5790.171)
-Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [48a28b03c128efabc394fe34d6c46920, clickElement {id=BA40AA815DC8CA1060ACE5C45A861947_element_39}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\PRASHA~1.RAM\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:60467}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60467/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (48a28b03c128efabc394fe34d6c46920)] -&gt; xpath: (//i[@class=&apos;fa fa-shopping-cart&apos;]/..)[1]]
-Session ID: 48a28b03c128efabc394fe34d6c46920
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-	at Temenos.UtlityMethods.UtlityMethods.goToCartPage(UtlityMethods.java:51)
-	at Temenos.TestCases.ErrorValidationTest.confirmationMsgValidation(ErrorValidationTest.java:43)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 34 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Temenos.TestCases.ErrorValidationTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="loginErrorValidation">
@@ -210,18 +168,18 @@ Session ID: 48a28b03c128efabc394fe34d6c46920
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="SubmitOrder({password=Password@179, email=prashannarg@gmail.com, productName=zara coat 3})">
-                  </a> <!-- SubmitOrder({password=Password@179, email=prashannarg@gmail.com, productName=zara coat 3}) -->
-                  <span class="method-name">SubmitOrder</span>
-                  <span class="parameters">({password=Password@179, email=prashannarg@gmail.com, productName=zara coat 3})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="SubmitOrder({password=Password@179, email=Dhivyan@gmail.com, productName=adidas original})">
                   </a> <!-- SubmitOrder({password=Password@179, email=Dhivyan@gmail.com, productName=adidas original}) -->
                   <span class="method-name">SubmitOrder</span>
                   <span class="parameters">({password=Password@179, email=Dhivyan@gmail.com, productName=adidas original})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SubmitOrder({password=Password@179, email=prashannarg@gmail.com, productName=zara coat 3})">
+                  </a> <!-- SubmitOrder({password=Password@179, email=prashannarg@gmail.com, productName=zara coat 3}) -->
+                  <span class="method-name">SubmitOrder</span>
+                  <span class="parameters">({password=Password@179, email=prashannarg@gmail.com, productName=zara coat 3})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -236,23 +194,22 @@ Session ID: 48a28b03c128efabc394fe34d6c46920
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\UserDrive\Prashan\E2ETesting\SeleniumFrameworkDesign\testNgXML\testng.xml</span>
+            <span class="header-content">C:\UserDrive\Prashan\E2ETesting\SeleniumFrameworkDesign\testNgXML\testngSerial.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Submit Order TestFolder&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;Temenos.GlobalTest.Listener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Temenos.TestCases.SubmitOrderTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Submit Order TestFolder --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Error Validation TestFolder&quot; verbose=&quot;0&quot;&gt;
-    &lt;classes&gt;
       &lt;class name=&quot;Temenos.TestCases.ErrorValidationTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Error Validation TestFolder --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -264,10 +221,7 @@ Session ID: 48a28b03c128efabc394fe34d6c46920
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Submit Order TestFolder (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Error Validation TestFolder (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -305,28 +259,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'SubmitOrder')
 data.setCell(0, 2, 'Temenos.TestCases.SubmitOrderTest')
-data.setCell(0, 3, 5760);
+data.setCell(0, 3, 5927);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'SubmitOrder')
 data.setCell(1, 2, 'Temenos.TestCases.SubmitOrderTest')
-data.setCell(1, 3, 5322);
+data.setCell(1, 3, 5792);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'confirmationMsgValidation')
 data.setCell(2, 2, 'Temenos.TestCases.ErrorValidationTest')
-data.setCell(2, 3, 1696);
+data.setCell(2, 3, 5633);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'loginErrorValidation')
 data.setCell(3, 2, 'Temenos.TestCases.ErrorValidationTest')
-data.setCell(3, 3, 1183);
+data.setCell(3, 3, 1403);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'validateOrderPage')
 data.setCell(4, 2, 'Temenos.TestCases.SubmitOrderTest')
-data.setCell(4, 3, 705);
+data.setCell(4, 3, 688);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -359,64 +313,62 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">SubmitOrder({password=Password@179, email=prashannarg@gmail.com, productName=zara coat 3})</span>
-                <span class="method-start">6233 ms</span>
+                <span class="method-start">8823 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeWindow</span>
-                <span class="method-start">11557 ms</span>
+                <span class="method-start">14629 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">11674 ms</span>
+                <span class="method-start">14714 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">SubmitOrder({password=Password@179, email=Dhivyan@gmail.com, productName=adidas original})</span>
-                <span class="method-start">16172 ms</span>
+                <span class="method-start">19001 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeWindow</span>
-                <span class="method-start">21932 ms</span>
+                <span class="method-start">24930 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">22033 ms</span>
+                <span class="method-start">25042 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateOrderPage</span>
-                <span class="method-start">27176 ms</span>
+                <span class="method-start">29471 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeWindow</span>
-                <span class="method-start">27882 ms</span>
+                <span class="method-start">30160 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Temenos.TestCases.ErrorValidationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">28002 ms</span>
+                <span class="method-start">30261 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">confirmationMsgValidation</span>
-                <span class="method-start">32636 ms</span>
+                <span class="method-start">33726 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeWindow</span>
-                <span class="method-start">34335 ms</span>
+                <span class="method-start">39360 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">launchApplication</span>
-                <span class="method-start">34494 ms</span>
+                <span class="method-start">39593 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginErrorValidation</span>
-                <span class="method-start">39002 ms</span>
+                <span class="method-start">43139 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeWindow</span>
-                <span class="method-start">40186 ms</span>
+                <span class="method-start">44545 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

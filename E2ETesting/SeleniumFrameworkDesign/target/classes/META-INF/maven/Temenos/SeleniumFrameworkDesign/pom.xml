@@ -98,6 +98,26 @@
 		 </profile>
 		 
 		 <profile>
+		   <id>RegressionSerial</id>
+		    <build>
+	   		<pluginManagement>
+		   <plugins>
+   			 <plugin>
+		        <groupId>org.apache.maven.plugins</groupId>
+		        <artifactId>maven-surefire-plugin</artifactId>
+		        <version>3.1.0</version>
+		        <configuration>
+		          <suiteXmlFiles>
+		            <suiteXmlFile>testNgXML/testngSerial.xml</suiteXmlFile>
+		          </suiteXmlFiles>
+		        </configuration>
+      		 </plugin>
+   			</plugins>
+		   	</pluginManagement>
+   			</build>
+		 </profile>
+		 
+		 <profile>
 			 <id>ListenerDemo</id>
 		    <build>
 	   		<pluginManagement>

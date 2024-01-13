@@ -4,16 +4,23 @@
   <listeners>
     <listener class-name="Temenos.GlobalTest.Listener"/>
   </listeners>
-  <test thread-count="5" name="Error Validation TestFolder(failed)">
+  <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="Temenos.TestCases.ErrorValidationTest">
         <methods>
           <include name="launchApplication"/>
           <include name="closeWindow"/>
-          <include name="confirmationMsgValidation"/>
           <include name="loginErrorValidation"/>
         </methods>
       </class> <!-- Temenos.TestCases.ErrorValidationTest -->
+      <class name="Temenos.TestCases.SubmitOrderTest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="validateOrderPage"/>
+          <include name="closeWindow"/>
+          <include name="SubmitOrder" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Temenos.TestCases.SubmitOrderTest -->
     </classes>
-  </test> <!-- Error Validation TestFolder(failed) -->
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
